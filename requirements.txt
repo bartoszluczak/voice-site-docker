@@ -1,4 +1,4 @@
-vocode==0.1.111a0
+vocode
 redis
 twilio
 pyngrok
