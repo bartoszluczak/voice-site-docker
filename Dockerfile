@@ -16,5 +16,6 @@ RUN pip install --no-cache-dir --upgrade -r requirements.txt
 COPY main.py /code/main.py
 COPY speller_agent.py /code/speller_agent.py
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", os.environ.get("PORT", 3000)]
+EXPOSE 3000
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "3000"]
 
